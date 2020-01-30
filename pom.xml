@@ -1,0 +1,76 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>co.com.redhat.sso.provider.user</groupId>
+  <artifactId>user-provider-itau-bd</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>user-provider-itau-bd</name>
+  <description>User provider de SSO para bd legada de ITAU</description>
+  
+  <properties>
+  	<maven.compiler.source>1.8</maven.compiler.source>
+  	<maven.compiler.target>1.8</maven.compiler.target>
+  </properties> 
+  
+  <dependencies>
+  	<dependency>
+  		<groupId>org.keycloak</groupId>
+  		<artifactId>keycloak-server-spi</artifactId>
+  		<version>7.0.0.redhat-00002</version>
+  		<scope>provided</scope>
+  	</dependency>
+  	<dependency>
+	    <groupId>org.keycloak</groupId>
+	    <artifactId>keycloak-core</artifactId>
+	    <version>7.0.0.redhat-00002</version>
+  		<scope>provided</scope>
+	</dependency>
+  	<dependency>
+  		<groupId>CryptoChannelTools</groupId>
+  		<artifactId>CryptoChannelTools</artifactId>
+  		<version>1.0-SNAPSHOT</version>
+  	</dependency>
+  </dependencies>
+  
+  <repositories>
+		<repository>
+			<id>redhat-ga-repository</id>
+			<url>https://maven.repository.redhat.com/ga</url>
+			<releases>
+			</releases>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
+		<repository>
+			<id>redhat-ea-repository</id>
+			<url>https://maven.repository.redhat.com/earlyaccess/all</url>
+			<releases>
+			</releases>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
+	</repositories>
+
+	<pluginRepositories>
+		<pluginRepository>
+			<id>redhat-ga-repository</id>
+			<url>https://maven.repository.redhat.com/ga</url>
+			<releases>
+			</releases>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</pluginRepository>
+		<pluginRepository>
+			<id>redhat-ea-repository</id>
+			<url>https://maven.repository.redhat.com/earlyaccess/all</url>
+			<releases>
+			</releases>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</pluginRepository>
+	</pluginRepositories>
+</project>
